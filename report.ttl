@@ -1,0 +1,121 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-EQUIPO-TRAFICOTTL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab tipo-equipo-trafico.ttl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#TIPO-EQUIPO-TRAFICO.TTL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1585782808968> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-INCIDENCIATTL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab tipo-incidencia.ttl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#TIPO-INCIDENCIA.TTL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1585782808968> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#entrySubject>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+        a       rdf:Property .
+
+rdfs:label  a   owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#reportDate>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968HTTPVOCABCIUDADESABIERTASESDEFTRANSPORTETRAFICO%23>
+        a       <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC> , <http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                "http://vocab.ciudadesabiertas.es/def/transporte/trafico#" ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1585782808968> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#warning" .
+
+<http://vocab.linkeddata.es/ontology/report#Error>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#LICENSENOTFOUND>
+        a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
+        rdfs:label  "Warning: A license was not found for vocabulary" .
+
+<http://vocab.linkeddata.es/ontology/report#Report>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#MISSINGTITLEORDESC>
+        a           <http://vocab.linkeddata.es/ontology/report#Warning> ;
+        rdfs:label  "Warning: title or description missing from vocabulary" .
+
+<http://vocab.linkeddata.es/ontology/report#GENERICERROR>
+        a           <http://vocab.linkeddata.es/ontology/report#Error> ;
+        rdfs:label  "Error: the vocabulary could not be loaded or processed" .
+
+<http://vocab.linkeddata.es/ontology/report#REPORT1585782808968>
+        a           <http://vocab.linkeddata.es/ontology/report#Report> ;
+        rdfs:label  "Report created on Wed Apr 01 23:13:28 UTC 2020" ;
+        <http://vocab.linkeddata.es/ontology/report#hasEntry>
+                <http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-EQUIPO-TRAFICOTTL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-INCIDENCIATTL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-NIVEL-SERVICIOTTL> , <http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968HTTPVOCABCIUDADESABIERTASESDEFTRANSPORTETRAFICO%23> ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+                "3" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+                "0" ;
+        <http://vocab.linkeddata.es/ontology/report#numberVocabsWarning>
+                "1" ;
+        <http://vocab.linkeddata.es/ontology/report#reportDate>
+                "Wed Apr 01 23:13:28 UTC 2020"^^xsd:dateTime .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968HTTPVOCABCIUDADESABIERTASESDEFTRANSPORTETRAFICO%2523>
+        rdfs:label  "Entry for vocab http://vocab.ciudadesabiertas.es/def/transporte/trafico#" .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsError>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#numberVocabsOK>
+        a       owl:DatatypeProperty .
+
+<http://vocab.linkeddata.es/ontology/report#Warning>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#Entry>
+        a       owl:Class .
+
+<http://vocab.linkeddata.es/ontology/report#ENTRY1585782808968TIPO-NIVEL-SERVICIOTTL>
+        a           <http://vocab.linkeddata.es/ontology/report#Entry> ;
+        rdfs:label  "Entry for vocab tipo-nivel-servicio.ttl" ;
+        <http://vocab.linkeddata.es/ontology/report#detectedProblem>
+                <http://vocab.linkeddata.es/ontology/report#GENERICERROR> ;
+        <http://vocab.linkeddata.es/ontology/report#entrySubject>
+                <http://vocab.linkeddata.es/ontology/report#TIPO-NIVEL-SERVICIO.TTL> ;
+        <http://vocab.linkeddata.es/ontology/report#isEntryOfReport>
+                <http://vocab.linkeddata.es/ontology/report#REPORT1585782808968> ;
+        <http://vocab.linkeddata.es/ontology/report#vocabularyStatus>
+                "http://vocab.linkeddata.es/ontology/report#error" .
+
+<http://vocab.linkeddata.es/ontology/report#hasEntry>
+        a       rdf:Property .
+
+<http://vocab.linkeddata.es/ontology/report#detectedProblem>
+        a       rdf:Property .
